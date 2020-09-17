@@ -28,3 +28,6 @@ Route::get('/blog/edit/{id}', 'BlogController@showEdit')->name('edit');
 
 //ブログ更新
 Route::post('/blog/update', 'BlogController@exeUpdate')->name('update');
+
+//ブログ更新
+Route::post('/blog/delete/{id}', 'BlogController@exeDelete')->name('delete');
