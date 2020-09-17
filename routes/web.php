@@ -31,3 +31,7 @@ Route::post('/blog/update', 'BlogController@exeUpdate')->name('update');
 
 //ブログ更新
 Route::post('/blog/delete/{id}', 'BlogController@exeDelete')->name('delete');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
